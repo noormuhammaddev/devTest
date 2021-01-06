@@ -8,9 +8,16 @@
 
   <body>
     <form>
-      Formula: <input name="formula"><br />
-      Iterations: <input name="iterations"><br />
-      Precision: <input name="precision"><br />
+      Formula: <input name="formula" list="defList" autocomplete="on"><br />
+        <datalist id="defList">
+          <option value="sin">
+          <option value="cos">
+          <option value="tan">
+          <option value="cot">
+        </datalist><br />
+      Iterations: <input type="range" name="iterations" min="1" max="100" value="10" /><br />
+      Precision:   <input type="number" name="precision" min="1" max="100" value="50" /><br />
+      <br />
     </form>
   </body>
 </html>
