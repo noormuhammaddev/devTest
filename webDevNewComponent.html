@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced form</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
+
+    <style>
+      body {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .component-name {
+        width: 300px;
+      }
+      .component-name .tooltip {
+        background-color: #000;
+        color: #FFF;
+        text-align: center;
+        padding: 10px 20px;
+        position: relative;
+      }
+
+      .component-name .tooltip:before, .component-name .tooltip:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+      }
+
+      .component-name .tooltip:before {
+        width: 15px;
+        height: 15px;
+        background-color: #000;
+      }
+
+      .component-name .tooltip:after {
+        border: 15px solid transparent;
+        border-top-color: #000;
+        margin-top: 10px;
+      }
+
+      .component-name .progress-bar {
+        height: 10px;
+        border: 1px solid #a5a5a5;
+        background-color: #000;
+        margin-top: 18px;
+        overflow: hidden;
+      }
+
+      .component-name .progress-bar span {
+        background-color: #f00;
+      }
+      .component-name .progress-bar span.per-80 {
+        width: 80%;
+        display: block;
+        height: 100%;
+      }
+
+      .component-name .component-content {
+        background-color: #a5a5a5;
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+        padding: 50px 10px 10px 10px;
+      }
+
+      .flex-row {
+        display: flex;
+        margin-top: 20px;
+      }
+      .flex-row .item {
+        flex: 1;
+      }
+
+      .button {
+        border: 1px solid #999999;
+        border-radius: 4px;
+        padding: 10px 20px;
+        display: inline-block;
+        color: #fff;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="component-name">
+      <div class="tooltip">$1500 still needed for this campaign</div>
+      <div class="progress-bar">
+        <span class="per-80"></span>
+      </div>
+      <div class="component-content">
+        <p>Only 3 days left to fund this campaign</p>
+        <p>Join the 10,000 other donors who have already supported this campaign. Every $help</p>
+
+        <div class="flex-row">
+          <div class="item">
+            <a href="#" class="button">$50</a>
+          </div>
+
+          <div class="item">
+            <a href="#" class="button">Donate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
